@@ -66,7 +66,7 @@ p {
     font-size: 4rem;
   }
 
-  h2 {
+  h3 {
     font-size: 2.4rem;
   }
 }
@@ -760,4 +760,28 @@ a {
 
 .block-plans .card {
   max-width: 50rem;
+}
+
+/* Features */
+.feature {
+  gap: 5rem 2rem;
+  margin: 4rem 0rem;
+}
+
+.feature:first-of-type {
+  margin-top: 6rem;
+}
+
+.feature__heading {
+  margin: 1rem 0;
+}
+
+.feature__image {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .feature:nth-of-type(even) .feature__content {
+    order: 2;
+  }
 }
