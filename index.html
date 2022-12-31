@@ -18,6 +18,518 @@
     <title>Landing Page</title>
   </head>
   <body>
+    <header>
+      <nav class="nav collapsible">
+        <div class="nav__logo">
+          <a href="/"><img src="images/logo.svg" alt="" /></a>
+        </div>
+
+        <svg class="icon icon--white nav__toggler">
+          <use xlink:href="images/sprite.svg#menu"></use>
+        </svg>
+
+        <ul class="list nav__list collapsible__content">
+          <li class="nav__item"><a href="">Hosting</a></li>
+          <li class="nav__item"><a href="">VPS</a></li>
+          <li class="nav__item"><a href="">Domain</a></li>
+          <li class="nav__item"><a href="">Pricing</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="block block--dark block--skewed-left hero">
+        <div class="container grid grid--1x2">
+          <header class="hero__content block__header">
+            <h1 class="block__heading">Cloud Hosting for Pros</h1>
+            <p class="hero__tagline">
+              Deploy your websites in less than 60 seconds
+            </p>
+            <a href="#" class="btn btn--accent btn--stretched">Get Started</a>
+          </header>
+
+          <div class="hero__image">
+            <picture>
+              <source
+                type="image/webp"
+                srcset="images/banner@1x.webp 1x, images/banner@2x.webp 2x"
+              />
+
+              <source
+                type="image/png"
+                srcset="images/banner@1x.png 1x, images/banner@2x.png 2x"
+              />
+              <img class="" src="images/banner@1x.png" alt="" />
+            </picture>
+          </div>
+        </div>
+      </section>
+
+      <section class="block container block-domain">
+        <header class="block__header">
+          <h2>Starting at $9 per month</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+            vitae, doloribus voluptas quaerat cum repellendus quas nesciunt rem
+            minima assumenda.
+          </p>
+        </header>
+
+        <div class="input-group">
+          <input
+            class="input"
+            type="text"
+            name=""
+            id=""
+            placeholder="Enter domain name here"
+          />
+
+          <button class="btn btn--accent">
+            <svg class="icon icon--white">
+              <use xlink:href="images/sprite.svg#search"></use>
+            </svg>
+            Search
+          </button>
+        </div>
+
+        <ul class="list block-domain__prices">
+          <li><span class="badge badge--secondary">.com $9</span></li>
+          <li>.sg $10</li>
+          <li>.space $11</li>
+          <li>.info $14</li>
+          <li>.net $10</li>
+          <li>.xyz $10</li>
+        </ul>
+      </section>
+
+      <section class="block container block-plans">
+        <div class="grid grid--1x3">
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="plan__price">$14</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--secondary badge--small">10% OFF</span>
+                <span class="plan__description">Easy start on the cloud</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Unlimited Websites</li>
+                  <li class="list__item">Unlimited Bandwidth</li>
+                  <li class="list__item">100 GB SSD Sotrage</li>
+                  <li class="list__item">3 GB RAM</li>
+                </ul>
+                <button class="btn btn--block btn--outline">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan plan--popular">
+            <div class="card card--primary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="plan__price">$14</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--primary badge--small">10% OFF</span>
+                <span class="plan__description">Easy start on the cloud</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Unlimited Websites</li>
+                  <li class="list__item">Unlimited Bandwidth</li>
+                  <li class="list__item">100 GB SSD Sotrage</li>
+                  <li class="list__item">3 GB RAM</li>
+                </ul>
+                <button class="btn btn--block btn--outline">Buy Now</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="plan">
+            <div class="card card--secondary">
+              <header class="card__header">
+                <h3 class="plan__name">Entry</h3>
+                <span class="plan__price">$14</span>
+                <span class="plan__billing-cycle">/month</span>
+                <span class="badge badge--secondary badge--small">10% OFF</span>
+                <span class="plan__description">Easy start on the cloud</span>
+              </header>
+              <div class="card__body">
+                <ul class="list list--tick">
+                  <li class="list__item">Unlimited Websites</li>
+                  <li class="list__item">Unlimited Bandwidth</li>
+                  <li class="list__item">100 GB SSD Sotrage</li>
+                  <li class="list__item">3 GB RAM</li>
+                </ul>
+                <button class="btn btn--block btn--outline">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="block container">
+        <header class="block__header">
+          <h2>Host on the Cloud to Keep Growing</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut,
+            deserunt?
+          </p>
+        </header>
+
+        <article class="feature grid grid--1x2">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#easy"></use>
+              </svg>
+            </span>
+
+            <h3 class="feature__heading">Super Easy to Use</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              obcaecati vel ad unde est illo at. Labore excepturi officia
+              dolores!
+            </p>
+            <a href="https://www.google.com" class="link-arrow" target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/easy@1x.webp 1x, images/easy@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/easy@1x.jpg 1x, images/easy@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/easy@2x.jpg" alt="" />
+          </picture>
+        </article>
+
+        <article class="feature grid grid--1x2">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#computer"></use>
+              </svg>
+            </span>
+
+            <h3 class="feature__heading">Simply Fast Websites</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              obcaecati vel ad unde est illo at. Labore excepturi officia
+              dolores!
+            </p>
+            <a href="https://www.google.com" class="link-arrow" target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/fast@1x.webp 1x, images/fast@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/fast@1x.jpg 1x, images/fast@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/fast@2x.jpg" alt="" />
+          </picture>
+        </article>
+
+        <article class="feature grid grid--1x2">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#wordpress"></use>
+              </svg>
+            </span>
+
+            <h3 class="feature__heading">Wordpress Made Easy</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              obcaecati vel ad unde est illo at. Labore excepturi officia
+              dolores!
+            </p>
+            <a href="https://www.google.com" class="link-arrow" target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/wordpress@1x.webp 1x, images/wordpress@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/wordpress@1x.jpg 1x, images/wordpress@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/wordpress@2x.jpg" alt="" />
+          </picture>
+        </article>
+
+        <article class="feature grid grid--1x2">
+          <div class="feature__content">
+            <span class="icon-container">
+              <svg class="icon icon--primary">
+                <use xlink:href="images/sprite.svg#clock"></use>
+              </svg>
+            </span>
+
+            <h3 class="feature__heading">24/7 Expert Support</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              obcaecati vel ad unde est illo at. Labore excepturi officia
+              dolores!
+            </p>
+            <a href="https://www.google.com" class="link-arrow" target="_blank"
+              >Learn More</a
+            >
+          </div>
+
+          <picture>
+            <source
+              type="image/webp"
+              srcset="images/support@1x.webp 1x, images/support@2x.webp 2x"
+            />
+            <source
+              type="image/jpg"
+              srcset="images/support@1x.jpg 1x, images/support@2x.jpg 2x"
+            />
+            <img class="feature__image" src="images/support@2x.jpg" alt="" />
+          </picture>
+        </article>
+      </section>
+
+      <section class="block block--dark block--skewed-right block-showcase">
+        <header class="block__header">
+          <h2>User-friendly Control Panel</h2>
+        </header>
+
+        <div class="container grid grid--1x2">
+          <picture class="block-showcase__image">
+            <source
+              type="image/webp"
+              srcset="/images/ipad@1x.webp 1x, /images/ipad@2x.webp 2x"
+            />
+
+            <source
+              type="image/png"
+              srcset="/images/ipad@1x.png 1x, /images/ipad@2x.png 2x"
+            />
+
+            <img src="/images/ipad@1x.png" alt="" />
+          </picture>
+
+          <ul class="list">
+            <li>
+              <section class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#snap"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Easy Start & Manage Updates</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                    vel perspiciatis consequuntur ab.
+                  </p>
+                </div>
+              </section>
+            </li>
+
+            <li>
+              <section class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#growth"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Staging, GIT & WP-CLI</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                    vel perspiciatis consequuntur ab.
+                  </p>
+                </div>
+              </section>
+            </li>
+            <li>
+              <section class="media">
+                <div class="media__image">
+                  <svg class="icon icon--primary">
+                    <use xlink:href="images/sprite.svg#wordpress"></use>
+                  </svg>
+                </div>
+                <div class="media__body">
+                  <h3 class="media__title">Dynamic Caching & More</h3>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Veniam quisquam, ex nostrum vero voluptates dicta excepturi
+                    vel perspiciatis consequuntur ab.
+                  </p>
+                </div>
+              </section>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="block">
+        <header class="block__header">
+          <h2>What our Customer are Saying</h2>
+          <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae
+            reiciendis a tenetur velit itaque mollitia recusandae, tempore
+            pariatur quos dicta.
+          </p>
+        </header>
+
+        <div class="container">
+          <section class="card testimonial">
+            <div class="grid grid--1x2">
+              <div class="testimonial__image">
+                <img
+                  src="images/testimonial.jpg"
+                  alt="A happy, smiling customer"
+                />
+                <span class="icon-container icon-container--accent">
+                  <svg class="icon icon--white icon--small">
+                    <use xlink:href="images/sprite.svg#quotes"></use>
+                  </svg>
+                </span>
+              </div>
+
+              <blockquote class="quote">
+                <p class="quote__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Beatae recusandae ipsa fugit tenetur eveniet corporis quisquam
+                  assumenda sit tempore cupiditate.
+                </p>
+
+                <footer>
+                  <section class="media">
+                    <div class="media__image">
+                      <svg class="icon icon--primary quote__line">
+                        <use xlink:href="images/sprite.svg#line"></use>
+                      </svg>
+                    </div>
+                    <div class="media__body">
+                      <h3 class="media__title quote_author">John Smith</h3>
+                      <p class="quote__organization">ABC Company</p>
+                    </div>
+                  </section>
+                </footer>
+              </blockquote>
+            </div>
+          </section>
+        </div>
+      </section>
+
+      <section class="container">
+        <div class="callout callout--primary callout-signup">
+          <div class="grid grid--1x2">
+            <div class="callout__content">
+              <h2 class="callout__heading">Ready to get started?</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Consequatur libero voluptatum exercitationem velit! Eaque totam
+                fugiat delectus impedit, repellendus cum?
+              </p>
+            </div>
+            <a href="#" class="btn btn--secondary btn--stretched"
+              >Get Started</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <footer class="footer block block--dark">
+        <div class="container grid footer__container">
+          <article class="footer__item collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Products</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+
+            <section class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">Website Hosting</a></li>
+                <li><a href="#">Free Automated Wordpress</a></li>
+                <li><a href="#">Migrations</a></li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="footer__item collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Company</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+
+            <section class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Affiliates</a></li>
+                <li><a href="#">Blog</a></li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="footer__item collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Support</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+
+            <section class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Knowledge Base</a></li>
+                <li><a href="#">FAQ</a></li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="footer__item collapsible">
+            <header class="collapsible__header">
+              <h2 class="collapsible__heading footer__heading">Domains</h2>
+              <svg class="icon icon--white collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+              </svg>
+            </header>
+
+            <section class="collapsible__content">
+              <ul class="list">
+                <li><a href="#">Domain Checker</a></li>
+                <li><a href="#">Domain Transfer</a></li>
+                <li><a href="#">Free Domain</a></li>
+              </ul>
+            </section>
+          </article>
+
+          <article class="footer__brand">
+            <a href="#"><img src="images/logo.svg" alt="" /></a>
+            <p class="footer__copyright">Copyright &copy; 2022 YC</p>
+          </article>
+        </div>
+      </footer>
+    </main>
     <!-- <h1>Heading 1</h1>
     <h2>Heading 2</h2>
     <h3>Heading 3</h3>
@@ -116,7 +628,5 @@
         molestiae!
       </section>
     </div> -->
-
-   
   </body>
 </html>

@@ -136,7 +136,6 @@ a {
 .list {
   list-style: none;
   padding-left: 0;
-  color: var(--color-headings);
 }
 
 .list--inline .list__item {
@@ -219,7 +218,7 @@ a {
   font-weight: 600;
   margin: 1rem 0;
   outline: 0;
-  padding: 2rem 3rem;
+  padding: 2rem 4vw;
   text-align: center;
   text-transform: uppercase;
   white-space: nowrap;
@@ -307,6 +306,8 @@ a {
 .input-group .input {
   border: 0;
   flex-grow: 1;
+  width: 0;
+  flex-basis: 0;
   padding: 1.5rem 3rem;
 }
 
@@ -446,6 +447,7 @@ a {
 .media {
   display: flex;
   gap: 2rem;
+  font-size: 2rem;
 }
 
 .media__title {
@@ -582,6 +584,10 @@ a {
   text-align: center;
 }
 
+.callout-signup {
+  transform: translateY(5rem);
+}
+
 @media screen and (min-width: 768px) {
   .callout .grid--1x2 {
     grid-template-columns: 1fr auto;
@@ -592,7 +598,7 @@ a {
 
   .callout .btn {
     justify-self: start;
-    margin-left: 3rem;
+    margin-left: 0 2rem;
   }
 }
 
@@ -736,15 +742,16 @@ a {
 }
 
 .block-domain__prices {
+  align-items: center;
+  color: var(--color-headings);
   display: grid;
-  grid-template: repeat(2, 6rem) / repeat(3, 1fr);
   font-size: 2rem;
   font-weight: 600;
+  grid-template: repeat(2, 6rem) / repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
   justify-items: center;
-  max-width: 700px;
   margin-inline: auto;
+  max-width: 700px;
 }
 
 @media screen and (min-width: 768px) {
@@ -783,6 +790,35 @@ a {
 @media screen and (min-width: 768px) {
   .feature:nth-of-type(even) .feature__content {
     order: 2;
+  }
+}
+
+/* Showcase Block */
+.block-showcase .grid--1x2 {
+  grid-template-columns: none;
+  justify-items: center;
+}
+
+.block-showcase .list {
+  margin-inline: auto;
+}
+
+.block-showcase__image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+  .block-showcase__image {
+    justify-self: end;
+  }
+
+  .block-showcase__image img {
+    width: auto;
+    max-width: 700px;
+  }
+
+  .block-showcase .grid {
+    grid-template-columns: 50% 50%;
   }
 }
 
